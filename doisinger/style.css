@@ -673,7 +673,6 @@ Clientes satisfechos
 
 #Proyectos .item-proyectos:hover .boton-ver {
   background: #e04885; /* Fondo rosa */
-  transition: background 0.3s ease; /* Transición suave */
   color: #ffffff;
 }
 
