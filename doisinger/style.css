@@ -1,0 +1,915 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: Raleway;
+}
+
+/* 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+header area
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.header-area {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center; /* Centra la caja del menú horizontalmente */
+}
+
+.menu-box {
+  display: flex; /* Activa Flexbox */
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: space-between; /* Separa el logo y el menú */
+  width: 55%; /* ancho dell menu */
+  max-width: none; /* Elimina cualquier límite de ancho */
+  background-color: white; /* Fondo blanco */
+  padding: 10px 40px; /* Ajusta el padding interno */
+  margin: 30px auto; /* Centra horizontalmente y agrega margen superior */
+  border-radius: 150px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  height: 65px; /* Ajusta la altura de la caja */
+}
+
+.menu-box ul {
+  display: flex; /* Hace que los elementos del menú estén en línea */
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0;
+  padding: 0;
+}
+
+.menu-box ul li {
+  margin-left: 35px; /* Espaciado entre los botones */
+}
+
+.menu-box ul li a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: #777; /* Cambia el color del texto según tu diseño */
+  font-weight: 500; /* Ajusta el grosor del texto */
+  font-size: 13px; /* Ajusta el tamaño del texto */
+}
+
+.menu-box ul li a:hover, .menu-box ul li a.active {
+  color: #ff589e;/* Cambia el color al pasar el mouse */
+}
+
+/* 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+header area final
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+/* 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Welcome Area
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.MensajeBienvenida {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  background: #3498db;
+  color: #ffffff;
+  margin-bottom: 30px;
+  display: flex;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+}
+
+.Submensaje{
+  font-size: 35px; /* Cambia el tamaño de la fuente */
+  font-weight: 400; /* Ajusta el grosor del texto */
+  color: #ffffff; /* Cambia el color del texto */
+  margin-top: 20px; /* Ajusta el espacio superior */
+  margin-bottom: 30px; /* Ajusta el espacio inferior */
+  letter-spacing: 1px; /* Ajusta el espaciado entre letras */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+}
+
+.beneficios {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px; /* Reduce el espacio inferior entre los párrafos */
+  line-height: 1.2; /* Ajusta la altura de línea para que el texto esté más compacto */  
+  display: center;
+  justify-content: center;/* Distribuye los <p>  */
+  align-items: center;/* Alinea los elementos verticalmente */
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.boton-hablamos {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #ff589e;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  margin-bottom: 80px;
+}
+
+.welcome-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db;
+  color: #ffffff;
+  height: 100vh;
+}
+
+.welcome-area .header-texto {
+  margin-top: -275px;
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  width: 100%;
+}
+
+.welcome-area .header-texto p {
+  font-size: 15px;
+  line-height: 1.4;/*altura de línea  */
+  color: #fff;
+  margin-bottom: 10px;/* Espacio inferior */
+  display: flex;/* flexbox para centrar */
+  align-items: center;/* Centra verticalmente */
+}
+
+.welcome-area .header-texto p .material-symbols-outlined {
+  margin-right: 5px;/* Espacio entre el icono y el texto */
+  color: #ff589e;/* Color del icono */
+  font-weight: bold;/* Hace que el icono se vea más grueso */
+  font-size: 24px;/* Ajusta el tamaño del icono  */
+  text-shadow: 1px 1px 0.5px rgba(255, 255, 255, 0.8);/* Sombra blanca */
+}
+
+/* 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Final Welcome Area
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+/* 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Que hacemos?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.que-hacemos-container {
+  display: flex; /* Activa Flexbox */
+  flex-wrap: wrap; /* Permite que las cajas se ajusten en varias filas si no caben */
+  justify-content: center; /* Centra las cajas horizontalmente */
+  gap: 30px; /* Espaciado entre las cajas */
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  margin: 50px auto 0 auto; /* Aumenta el margen superior y centra el contenedor*/
+  padding: 0 20px; /* Agrega un margen interno lateral */
+  margin-top: -200px; /* Usa un valor negativo para subir las cajas */
+}
+
+.caja-quehacemos {
+  cursor: pointer;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  flex: 1 1 calc(31% - 20px); /* Cada caja ocupa el 30% del ancho del contenedor menos el espacio del gap */
+  max-width: calc(31% - 20px); /* Limita el ancho máximo de cada caja */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.caja-quehacemos:hover .icon {
+  background-color: #ff589e;
+}
+
+.caja-quehacemos .icon {
+  width: 90px;
+  height: 90px;
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  margin: auto;
+  position: relative;
+  margin-bottom: 30px;
+  background: #3498db;
+  border-radius: 50%; /* Hace que el contenedor sea un círculo */
+}
+
+.caja-quehacemos .icon i {
+  font-size: 18px;
+  color: #fff;
+}
+
+.caja-quehacemos .titulo-quehacemos {
+  font-weight: 500;
+  font-size: 18px;
+  color: #1e1e1e;
+  letter-spacing: 0.7px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.caja-quehacemos p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #777;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.home-feature {
+  padding-bottom: 0px;
+  padding-top: 30px;
+  margin-top: -220px;
+  z-index: 9;
+}
+
+.section-title {
+  text-align: justify;
+  margin: 0 auto;
+
+}
+
+/* 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Final que hacemos?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nosotros
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.box-nosotros {
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  text-align: left; /* Alinea el texto a la izquierda */
+  padding: 40px 20px; /* Agrega espacio interno */
+}
+
+.container-texto {
+  display: flex; /* Activa Flexbox */
+  align-items: center; /* Centra verticalmente la imagen y el texto */
+  gap: 300px; /* Espaciado entre la imagen y el texto */
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.container-texto p {
+  font-weight: 300; /* Cambia el grosor del texto a un valor más ligero */
+  max-width: 500px; /* Limita el ancho del texto */
+  margin: 0; /* Elimina márgenes adicionales */
+  line-height: 1.8; /* Mejora la legibilidad */
+  font-size: 16px; /* Tamaño del texto */
+  color: #777; /* Color del texto */
+}
+
+.container-texto strong {
+  font-weight: 500; /* Cambia el grosor del texto a un valor más pesado */
+}
+
+.container-texto .titulo {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 30px;
+  position: relative;
+  max-width: 600px; /* Limita el ancho del texto */
+
+}
+
+.container-texto .icon {
+  width: 250px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.hr {
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  max-width: 1100px;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  margin-top: 100px;
+  border-bottom: 1px solid #eee;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Fin Nosotros
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Metodologia
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.metodologia {
+  background-color: #3498db; /* Fondo azul que ocupa todo el ancho */
+  height: 310px; /* Altura del contenedor */
+}
+
+.metodologia-container {
+  display: flex; 
+  gap: 100px; /* Espaciado entre los elementos */
+  max-width: 1200px; /* Limita el ancho máximo del contenido interno */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  padding: 0 20px; /* Espaciado interno lateral */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+}
+
+.metodologia-item {
+  display: flex;
+  flex-direction: column; /* Coloca la imagen y el texto en una columna */
+  align-items: center; /* Centra la imagen y el texto horizontalmente */
+  justify-content: center; /* Centra la imagen y el texto verticalmente */
+  text-align: center; /* Centra el texto debajo de la imagen */
+  flex: 1 1 300px; /* Define un ancho base de 300px y permite que se expanda */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  height: 310px; /* Asegura que el contenedor ocupe toda la altura disponible */
+
+}
+
+.metodologia-item img {
+  width: 70px; /* Tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 15px; /* Espaciado entre la imagen y el texto */
+}
+
+.metodologia-item h1 {
+  font-size: 25px; /* Tamaño del texto */
+  color: #ffffff; /* Color del texto */
+  margin: 0; /* Elimina márgenes adicionales */
+  font-weight: 500; /* Grosor del texto */
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Fin Metodologia
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Precios
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Contenedor principal de la sección de precios */
+#planes-precios {
+  background-color: #f9f9f9; /* Fondo claro para la sección */
+  padding: 80px 20px; /* Espaciado interno superior e inferior */
+  display: flex;
+  flex-direction: column; /* Coloca el encabezado y las cajas en una columna */
+  align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo para el encabezado de la sección de precios */
+#planes-precios .precio-encabezado {
+  text-align: center; /* Centra el texto */
+  margin-bottom: 2rem; /* Espaciado inferior */
+}
+
+#planes-precios .precio-encabezado h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 30px;
+  position: relative;
+  max-width: 600px; /* Limita el ancho del texto */
+}
+
+#planes-precios .precio-encabezado p {
+  font-weight: 300; /* Cambia el grosor del texto a un valor más ligero */
+  max-width: 500px; /* Limita el ancho del texto */
+  margin: 0; /* Elimina márgenes adicionales */
+  line-height: 1.8; /* Mejora la legibilidad */
+  font-size: 16px; /* Tamaño del texto */
+  color: #777; /* Color del texto */
+} 
+
+
+
+/* Contenedor de precios  */
+ #planes-precios .container-precios {
+  display: flex;
+  flex-flow: row nowrap; /* Mantiene las columnas en una sola fila */
+  justify-content: center; /* Centra las cajas horizontalmente */
+  gap: 2rem; /* Espaciado entre las cajas */
+  flex-wrap: wrap; /* Permite que las cajas se ajusten en varias filas si es necesario*/
+  margin-top: 2rem;
+}
+
+
+/* Estilo de cada caja de precios */
+#planes-precios .item-precios {
+  background: #FFFFFF; /* Fondo blanco */
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1); /* Sombra */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 40px 40px; /* Espaciado interno igual en todos los lados */
+  width: 350px; /* Ancho fijo para cada caja */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  text-align: center; /* Centra el contenido dentro de la caja */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Estilo titulo de cada caja */
+#planes-precios .item-precios  .titulo-precios {
+  margin: 0 0 20px 0; /* Solo margen inferior */
+  padding-top: 0; /* Elimina el padding superior */
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 42px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+}
+
+ /* Estilo caja azul precio   */
+ .item-precios .caja-dinero {
+  background: #3498db; /* Fondo azul */
+  color: #ffffff; /* Texto blanco */
+  padding: 20px 0; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados */
+  margin-bottom: 30px; /* Espaciado inferior */
+}
+
+/* Estilo simbolo (caja azul)*/
+ #planes-precios .item-precios .caja-dinero  .currency {
+  font-size: 30px; /* Tamaño del precio */
+  font-weight: 300; /* Grosor del texto */
+}
+
+ /* Estilo numeros precio (caja azul) */
+ #planes-precios .item-precios .caja-dinero .currency, .monto {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+/* Cambia el fondo de la caja azul a rosa al pasar el mouse */
+#planes-precios .item-precios:hover .caja-dinero {
+  background: #e04885; /* Fondo rosa */
+  transition: background 0.3s ease; /* Transición suave */
+  color: #ffffff;
+}
+
+/* Estilo lista de servicios */
+#planes-precios .item-precios .lista {
+  font-weight: 100; /* Grosor del texto */
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding por defecto */
+  margin: 0; /* Elimina el margen por defecto */
+  margin-bottom: 50px; /* Espaciado inferior */
+}
+
+#planes-precios .item-precios .lista li{
+  text-align: center;
+  margin-bottom: 15px; /* Espaciado entre los elementos */  
+  font-weight: 400;
+  font-size: 13px;
+  color: #7a7a7a;
+  letter-spacing: 0.25px;
+  text-decoration: line-through; /* Subrayado por defecto */
+}
+
+#planes-precios .item-precios .lista li.active {
+  text-decoration: none; /* Elimina el subrayado para los elementos activos */
+  color: #7a7a7a;
+}
+
+/* Estilo boton contratar */
+#planes-precios .item-precios .boton-contratar {
+  display: inline-block;
+  background: #3498db; /* Fondo azul */
+  color: #ffffff; /* Texto blanco */
+  padding: 8px 13px; /* Espaciado interno */
+  border-radius: 28px; /* Bordes redondeados */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-size: 13px; /* Tamaño del texto*/ 
+  font-weight: 200; /* Grosor del texto*/ 
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+
+#planes-precios .item-precios:hover .boton-contratar {
+  background: #e04885; /* Fondo rosa */
+  transition: background 0.3s ease; /* Transición suave */
+  color: #ffffff;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Fin Precios
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Clientes satisfechos
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.box-clientes-satisfechos {
+  background-color: #3498db; /* Fondo azul */
+  height: 250px; /* Altura del contenedor */
+  display: flex; /* Activa Flexbox */
+  gap: 60px; /* Espaciado entre los elementos */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  text-align: left; /* Alinea el texto a la izquierda */
+  padding: 40px 20px; /* Agrega espacio interno */
+  justify-content: column; /* Cambia la dirección del contenido a columna */
+}
+
+.box-texto-numeros {
+  gap: 25px; /* Espaciado entre los elementos */
+  display: flex; /* Activa Flexbox */
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  text-align: center; /* Asegura que el texto esté centrado */
+  transition: transform 0.3s ease; /* Transición suave para el movimiento */
+}
+
+.box-texto-numeros strong {
+  font-size: 36px; /* Cambia el tamaño del texto */
+  font-weight: 700; /* Ajusta el grosor del texto */
+  color: #ffffff; /* Asegúrate de que el color sea blanco */
+}
+
+.box-texto-numeros span {
+  font-size: 16px; /* Cambia el tamaño del texto */
+  font-weight: 350; /* Ajusta el grosor del texto */
+  color: #ffffff; /* Asegúrate de que el color sea blanco */
+}
+.separador {
+  margin: 0 20px; /* Espaciado alrededor de la imagen */
+  align-self: center; /* Centra la imagen verticalmente */
+}
+.box-texto-numeros:hover {
+  transform: translateY(-10px); /* Mueve el elemento 10px hacia arriba */
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Fin Clientes satisfechos
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  PROYECTOS
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Estilo general de la sección de proyectos */
+#Proyectos {
+  background-color: #ffffff; /* Fondo claro para la sección */
+  padding: 80px 20px; /* Espaciado interno superior e inferior */
+  display: flex;
+  flex-direction: column; /* Coloca el encabezado y las cajas en una columna */
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: column; /* Cambia la dirección del contenido a columna */
+}
+
+/* Estilo encabezado  proyectos */
+#Proyectos .proyectos-encabezado {
+  text-align: center; /* Centra el texto */
+  margin-bottom: 2rem; /* Espaciado inferior */
+}
+
+#Proyectos .proyectos-encabezado h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 30px;
+  position: relative;
+  max-width: 600px; /* Limita el ancho del texto */
+}
+
+#Proyectos .proyectos-encabezado p {
+  font-weight: 300; /* Cambia el grosor del texto a un valor más ligero */
+  max-width: 500px; /* Limita el ancho del texto */
+  margin: 0; /* Elimina márgenes adicionales */
+  line-height: 1.8; /* Mejora la legibilidad */
+  font-size: 16px; /* Tamaño del texto */
+  color: #777; /* Color del texto */
+}
+
+
+/* Contenedor de proyectos  */
+#Proyectos .box-ejemplos {
+  display: flex;
+  flex-flow: row nowrap; /* Mantiene las columnas en una sola fila */
+  justify-content: center; /* Centra las cajas horizontalmente */
+  gap: 2rem; /* Espaciado entre las cajas */
+  flex-wrap: wrap; /* Permite que las cajas se ajusten en varias filas si es necesario*/
+  margin-top: 2rem;
+}
+
+/* Estilo de cada una de las cajas de proyectos */
+#Proyectos .item-proyectos {
+  display: flex; /* Activa Flexbox */
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto */
+  margin: 1rem; /* Espaciado entre las cajas */
+}
+
+/* Caja que contiene la imagen */
+#Proyectos .item-proyectos .box-img {
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.1); /* Sombra */
+  width: 200px; /* Ocupa todo el ancho disponible */
+  height: 200px; /* Altura fija para la caja de imagen */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+#Proyectos .item-proyectos .box-img img {
+  width: 100%; /* Imagen ocupa todo el ancho de la caja */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo del título */
+#Proyectos .item-proyectos h3 a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 42px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 0px;
+  margin-top: 20px; /* Espaciado superior */
+  position: relative;
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Estilo del texto */
+#Proyectos .item-proyectos .text {
+  font-size: 13px; /* Tamaño del texto */
+  color: #777; /* Color del texto */
+  line-height: 1.6; /* Mejora la legibilidad */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo boton verr */
+#Proyectos .item-proyectos .boton-ver {
+  display: inline-block;
+  background: #3498db; /* Fondo azul */
+  color: #ffffff; /* Texto blanco */
+  padding: 8px 13px; /* Espaciado interno */
+  border-radius: 28px; /* Bordes redondeados */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-size: 13px; /* Tamaño del texto*/ 
+  font-weight: 200; /* Grosor del texto*/ 
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+
+#Proyectos .item-proyectos:hover .boton-ver {
+  background: #e04885; /* Fondo rosa */
+  transition: background 0.3s ease; /* Transición suave */
+  color: #ffffff;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  FIN PROYECTOS
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  CONTACTO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Estilo general de la sección de contacto */
+#Contacto {
+  background-color: #f9f9f9; /* Fondo claro para la sección */
+  padding: 80px 20px; /* Espaciado interno superior e inferior */
+  display: flex;
+  flex-direction: column; /* Coloca el encabezado y las cajas en una columna */
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: column; /* Cambia la dirección del contenido a columna */
+}
+
+/* Estilo encabezado  contacto */
+#Contacto .contacto-encabezado {
+  text-align: center; /* Centra el texto */
+  margin-bottom: 2rem; /* Espaciado inferior */
+}
+
+#Contacto .contacto-encabezado h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 30px;
+  position: relative;
+  max-width: 600px; /* Limita el ancho del texto */
+}
+
+#Contacto .contacto-encabezado p {
+  font-weight: 300; /* Cambia el grosor del texto a un valor más ligero */
+  max-width: 500px; /* Limita el ancho del texto */
+  margin: 0; /* Elimina márgenes adicionales */
+  line-height: 1.8; /* Mejora la legibilidad */
+  font-size: 16px; /* Tamaño del texto */
+  color: #777; /* Color del texto */
+}
+
+/* Contenedor del contenido principal (texta lateral + area contacto) */
+#Contacto .contacto-contenido {
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  display: flex; /* Activa Flexbox */
+  gap: 2rem; /* Espaciado entre las columnas */
+  flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+  justify-content: flex-start; /* Alinea las columnas a la izquierda */
+  align-items: flex-start; /* Alinea las columnas en la parte superior */
+}
+
+/* Columna izquierda: contacto lateral */
+#Contacto .contacto-lateral {
+  flex: 0 0 30%; /* Ocupa el 30% del ancho del contenedor */
+  max-width: 30%; /* Limita el ancho máximo */
+  padding: 1rem; /* Espaciado interno */
+  text-align: left; /* Alinea el texto a la izquierda */
+  border-radius: 10px; /* Bordes redondeados */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+#Contacto .contacto-lateral h3{
+  margin-top: 0;
+  color: #1e1e1e;
+  font-weight: 400; /* Grosor del texto */
+  font-size: 18px; /* Tamaño del texto */
+}
+
+#Contacto .contacto-lateral p{
+  font-size: 15px; /* Tamaño del texto */
+  color: #777; /* Color del texto */
+  font-weight: 300; /* Cambia el grosor del texto a un valor más ligero */
+  line-height: 1.8; /* Mejora la legibilidad */
+}
+
+/* ----------------------------FORMULARIO CONTACTO--------------------------- */
+
+
+/* Columna derecha: contacto formulario */
+#Contacto .contacto-formulario {
+  flex: 1; /* Ocupa el resto del espacio disponible */
+  display: flex; /* Activa Flexbox */
+  flex-wrap: wrap; /* Permite que las cajas internas se ajusten en varias filas */
+  gap: 1rem; /* Espaciado entre las cajas internas */
+  align-items: flex-start; /* Alinea las cajas en la parte superior */
+  /*color: #777;  Color del texto 
+  font-size: 14px; /* Tamaño del texto
+  font-weight: 200; Grosor del texto */
+}
+
+/* Estilo para las cajas de "Nombre y apellidos" y "Correo electrónico" */
+#Contacto .contacto-formulario .box-nombre,
+#Contacto .contacto-formulario .box-email {
+  flex: 1 1 calc(50% - 1rem); /* Cada caja ocupa el 50% del ancho menos el espacio del gap */
+  background-color: #ffffff; /* Fondo claro */
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 25px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Estilo para la caja de "Escribe tu mensaje" */
+#Contacto .contacto-formulario .box-mensaje {
+  height: 200px; /* Altura fija para la caja de mensaje */
+  flex: 1 1 100%; /* Ocupa todo el ancho disponible */
+  background-color: #ffffff; /* Fondo claro */
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 25px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Ajusta las cajas para que los inputs y textarea ocupen todo el espacio */
+#Contacto .contacto-formulario .box-nombre,
+#Contacto .contacto-formulario .box-email,
+#Contacto .contacto-formulario .box-mensaje {
+  padding: 0; /* Elimina el padding interno de las cajas */
+  border-radius: 25px; /* Mantén los bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Mantén la sombra */
+  overflow: hidden; /* Asegura que los inputs no sobresalgan */
+  background-color: #ffffff; /* Fondo claro */
+  font-size: 14px; /* Tamaño del texto */
+  font-weight: 300; /* Grosor del texto */
+  color: #777; /* Color del texto */
+  font-family: inherit; /* Hereda la fuente del contenedor principal */
+}
+
+/* Estilo para los campos de entrada (input y textarea) */
+#Contacto .contacto-formulario input,
+#Contacto .contacto-formulario textarea {
+  width: 100%; /* Ocupa todo el ancho de la caja */
+  height: 100%; /* Ocupa toda la altura de la caja */
+  background-color: transparent; /* Usa el fondo de la caja padre */
+  padding: 1rem; /* Espaciado interno */
+  border: none; /* Elimina el borde por defecto */
+  font-size: inherit; /* Hereda el tamaño de fuente de la caja */
+  font-weight: inherit; /* Hereda el grosor del texto de la caja */
+  color: inherit; /* Hereda el color del texto de la caja */
+  font-family: inherit; /* Hereda la fuente de la caja */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  outline: none; /* Elimina el contorno al hacer clic */
+}
+
+/* Estilo específico para el textarea */
+#Contacto .contacto-formulario textarea {
+  resize: none; /* Elimina la opción de redimensionar */
+}
+
+/* Estilo para el botón de enviar */
+#Contacto .contacto-formulario .boton-enviar {
+  display: inline-block;
+  background: #3498db; /* Fondo azul */
+  color: #ffffff; /* Texto blanco */
+  padding: 18px 20px; /* Espaciado interno */
+  border-radius: 28px; /* Bordes redondeados */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-size: 13px; /* Tamaño del texto*/ 
+  font-weight: 200; /* Grosor del texto*/ 
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Efecto hover para el botón */
+#Contacto .contacto-formulario .boton-enviar:hover {
+  background: #e04885; /* Cambia el fondo a rosa al pasar el mouse */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  FIN CONTACTO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  FOOTER
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Estilo general del footer */
+.footer {
+  height: auto; /* Altura automática */
+  background-color: #3498db; /* Fondo azul */
+  color: #ffffff; /* Texto blanco */
+  padding: 20px 20px; /* Espaciado interno */
+  text-align: center; /* Centra el contenido */
+  margin: 0; /* Elimina márgenes */
+}
+
+.hr {
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  max-width: 1100px; /* Limita el ancho máximo */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  height: 0,25px; /* Grosor de la línea */
+  border: none; /* Elimina cualquier borde predeterminado */
+  background-color: #ffffff; /* Color de la línea */
+  opacity: 0.5; /* Reduce la opacidad al 50% */
+  margin-top: 20px; /* Espaciado superior */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Contenedor del contenido del footer */
+.footer-contenido {
+  max-width: 1200px; /* Limita el ancho máximo */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  display: flex; /* Activa Flexbox */
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  gap: 10px; /* Espaciado entre los elementos */
+}
+
+/* Texto del footer */
+#footer .footer-texto {
+  margin: 0; /* Elimina márgenes */
+  font-size: 14px; /* Tamaño del texto */
+  font-weight: 300; /* Grosor del texto */
+}
+
+/* Contenedor de los iconos de redes sociales */
+#footer .footer-redes {
+  display: flex; /* Activa Flexbox */
+  gap: 15px; /* Espaciado entre los iconos */
+}
+
+/* Estilo para los iconos de redes sociales */
+#footer .footer-redes .icono-red {
+  color: #ffffff; /* Color blanco para los iconos */
+  font-size: 18px; /* Tamaño de los iconos */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Efecto hover para los iconos */
+#footer .footer-redes .icono-red:hover {
+  color: #e04885; /* Cambia el color al pasar el mouse */
+  transform: scale(1.2); /* Aumenta ligeramente el tamaño */
+}
